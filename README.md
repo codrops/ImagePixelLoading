@@ -2,7 +2,7 @@
 
 A recreation of the on-scroll pixelated image loading effect seen on [Felicity Ingram](https://www.felicityingram.com/)'s website.
 
-![Image Title](https://generative-placeholders.glitch.me/image?width=800&height=600")
+![Onscroll pixel loading](https://tympanus.net/codrops/wp-content/uploads/2023/05/pixelloading.jpg)
 
 [Article on Codrops](https://tympanus.net/codrops/?p=)
 
