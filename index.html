@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>On-Scroll Pixelated Image Loading Effect | Codrops</title>
+		<meta name="description" content="A recreation of the on-scroll pixelated image loading effect seen on Felicity Ingram's website." />
+		<meta name="keywords" content="pixelated loading, gsap, ScrollTrigger, pixel, image, on-scroll, javascript" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/tcc0udb.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
+	</head>
+	<body class="demo-1 loading">
+		<main>
+			<div class="frame">
+				<div class="frame__title"> 
+					<h1 class="frame__title-main">On-Scroll Pixelated Image Loading based on <a href="https://www.felicityingram.com/">this</a></h1> 
+					<a aria-label="Back to the article" class="frame__title-back" href="https://tympanus.net/codrops/?p=72089"> 
+						<span class="oh__inner">Back to the article</span> 
+						<svg width="18px" height="18px" viewBox="0 0 24 24"><path vector-effect="non-scaling-stroke" d="M18.25 15.5a.75.75 0 00.75-.75v-9a.75.75 0 00-.75-.75h-9a.75.75 0 000 1.5h7.19L6.22 16.72a.75.75 0 101.06 1.06L17.5 7.56v7.19c0 .414.336.75.75.75z"></path>
+						</svg>
+					</a>
+				</div>
+				<a class="frame__prev" href="https://tympanus.net/Tutorials/AnimatedCodeBackground/">Previous demo</a>
+			</div>
+			<svg viewBox="955.38 368 268.62 271" width="268.62" height="271" class="deco"><path vector-effect="non-scaling-stroke" d=" M975.38 472 L1050.38 472 C1050.38 472, 1060.38 472, 1060.38 462 L1060.38 388 C1060.38 388, 1060.38 378, 1070.38 378 L1181.6200000000001 378 C1181.6200000000001 378, 1191.6200000000001 378, 1191.6200000000001 388 L1191.6200000000001 478 C1191.6200000000001 478, 1191.6200000000001 488, 1181.6200000000001 488 L1106.62 488 C1106.62 488, 1096.62 488, 1096.62 498 L1096.62 509 C1096.62 509, 1096.62 519, 1106.62 519 L1204 519 C1204 519, 1214 519, 1214 529 L1214 619 C1214 619, 1214 629, 1204 629 L1024 629 C1024 629, 1014 629, 1014 619 L1014 592 C1014 592, 1014 582, 1004 582 L975.38 582 C975.38 582, 965.38 582, 965.38 572 L965.38 482 C965.38 482, 965.38 472, 975.38 472"></path></svg>
+			<section class="content">
+				<div class="canvas-wrap" style="background-image:url(img/1.jpg)"></div>
+				<div class="content__inner">
+					<h2>
+						<span>D</span><span>A</span><span>A</span><span>K</span><span>O</span><br>
+						<span>N</span><span>i</span><span>x</span><span>i</span><span>e</span>
+					</h2>
+					<p>Introducing the ethereal masterpiece, an epitome of sartorial splendor and avant-garde elegance. Behold, the breathtaking embodiment of haute couture opulence that transcends time and space. As your fingertips caress the luxurious fabric, a symphony of tactile delight unfolds, weaving dreams into reality.</p>
+				</div>
+			</section>
+			<section class="content">
+				<div class="canvas-wrap" style="background-image:url(img/2.jpg)"></div>
+				<div class="content__inner">
+					<h2>
+						<span>R</span><span>o</span><span>z</span><span>e</span><span>n</span><br>
+						<span>N</span><span>o</span><span>v</span><span>u</span><span>s</span>
+					</h2>
+					<p>Draped in cascades of exquisite chiffon, this visionary creation embraces the essence of celestial allure. A celestial tapestry of celestial bodies unfolds, merging delicate sequins and celestial threads with celestial silk, encapsulating the whimsy of stardust captured in every stitch.</p>
+				</div>
+			</section>
+			<section class="content">
+				<div class="canvas-wrap" style="background-image:url(img/3.jpg)"></div>
+				<div class="content__inner">
+					<h2>
+						<span>J</span><span>a</span><span>d</span><span>e</span><span>l</span><br>
+						<span>A</span><span>r</span><span>d</span><span>e</span><span>n</span>
+					</h2>
+					<p>The silhouette, a celestial dance between the divine and the divine, celebrates the human form, sculpting curves with an otherworldly grace. Each contour, meticulously tailored to accentuate the wearer's individuality, whispers tales of celestial grace and unspoken desires.</p>
+				</div>
+			</section>
+			<section class="content">
+				<div class="canvas-wrap" style="background-image:url(img/4.jpg)"></div>
+				<div class="content__inner">
+					<h2>
+						<span>A</span><span>z</span><span>u</span><span>r</span><span>a</span><br>
+						<span>E</span><span>x</span><span>u</span><span>l</span><span>t</span>
+					</h2>
+					<p>Emanating an aura of refined enchantment, the color palette transcends earthly confines. Radiant hues, reminiscent of an artist's palette, collide in harmonious symphony. From celestial blues that evoke the tranquil depths of the cosmic ocean to the celestial purples that mirror the twilight hues of distant galaxies, every shade resonates with the very essence of ethereal beauty.</p>
+				</div>
+			</section>
+			<section class="content">
+				<div class="canvas-wrap" style="background-image:url(img/5.jpg)"></div>
+				<div class="content__inner">
+					<h2>
+						<span>Q</span><span>u</span><span>i</span><span>v</span><span>o</span><br>
+						<span>F</span><span>o</span><span>l</span><span>i</span><span>a</span>
+					</h2>
+					<p>Merging haute couture craftsmanship with the spirit of celestial poetry, this divine creation is an ode to individuality and audacity. A testament to the symbiosis between imagination and technique, it beckons the wearer to embrace their inner divinity and embrace the celestial magnificence that resides within.</p>
+				</div>
+			</section>
+			<section class="content">
+				<div class="canvas-wrap" style="background-image:url(img/6.jpg)"></div>
+				<div class="content__inner">
+					<h2>
+						<span>N</span><span>o</span><span>v</span><span>u</span><span>s</span><br>
+						<span>O</span><span>r</span><span>i</span><span>e</span><span>l</span>
+					</h2>
+					<p>Prepare to embark on a celestial journey of self-expression, where boundaries fade, and possibilities unfold. This haute couture masterpiece is a celestial hymn, an invitation to transcend the ordinary and embrace the extraordinary. Allow it to adorn your being, and experience the transcendence that only haute couture can bestow upon the soul.</p>
+				</div>
+			</section>
+		</main>
+		<script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/gsap.min.js"></script>
+		<script src="js/ScrollTrigger.min.js"></script>
+		<script src="js/lenis.min.js"></script>
+		<script type="module" src="js/index.js"></script>
+	</body>
+</html>
